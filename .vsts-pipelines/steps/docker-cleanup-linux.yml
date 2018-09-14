@@ -1,4 +1,18 @@
+parameters:
+  cleanupArm: false
 steps:
+  ################################################################################
+  # Cleanup Arm Env (Optional)
+  ################################################################################
+  - ${{ if eq(parameters.cleanupArm, 'true') }}:
+    - script: docker run --rm $(dockerArmRunArgs) --entrypoint docker $(testrunner.image) system prune -a -f --volumes
+      displayName: Cleanup ARM Docker
+      condition: always()
+      continueOnError: true
+
+  ################################################################################
+  # Cleanup Docker Resources
+  ################################################################################
   - script: $(Build.Repository.LocalPath)/scripts/cleanup-docker.sh
     displayName: Cleanup Docker
     condition: always()
