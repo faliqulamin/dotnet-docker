@@ -42,6 +42,14 @@
               }
             },
             {
+              "dockerfile": "samples/dotnetapp/Dockerfile",
+              "os": "windows",
+              "osVersion": "nanoserver-ltsc2019",
+              "tags": {
+                "dotnetapp-nanoserver-ltsc2019": {}
+              }
+            },
+            {
               "architecture": "arm",
               "dockerfile": "samples/dotnetapp/Dockerfile",
               "os": "linux",
@@ -86,6 +94,14 @@
               "osVersion": "nanoserver-1803",
               "tags": {
                 "aspnetapp-nanoserver-1803": {}
+              }
+            },
+            {
+              "dockerfile": "samples/aspnetapp/Dockerfile",
+              "os": "windows",
+              "osVersion": "nanoserver-ltsc2019",
+              "tags": {
+                "aspnetapp-nanoserver-ltsc2019": {}
               }
             },
             {
