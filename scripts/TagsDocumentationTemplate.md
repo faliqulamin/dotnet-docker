@@ -40,6 +40,18 @@ $(TagDocList:2.2.0-preview2-runtime-deps-stretch-slim|2.2-runtime-deps-stretch-s
 $(TagDocList:2.2.0-preview2-runtime-deps-alpine3.8|2.2-runtime-deps-alpine3.8|2.2.0-preview2-runtime-deps-alpine|2.2-runtime-deps-alpine)
 $(TagDocList:2.2.0-preview2-runtime-deps-bionic|2.2-runtime-deps-bionic)
 
+# Windows Server 2019 amd64 tags
+
+$(TagDoc:2.1.403-sdk-nanoserver-ltsc2019)
+$(TagDoc:2.1.5-aspnetcore-runtime-nanoserver-ltsc2019)
+$(TagDoc:2.1.5-runtime-nanoserver-ltsc2019)
+
+**.NET Core 2.2 Preview 3 tags**
+
+$(TagDoc:2.2.100-preview3-sdk-nanoserver-ltsc2019)
+$(TagDoc:2.2.0-preview3-aspnetcore-runtime-nanoserver-ltsc2019)
+$(TagDoc:2.2.0-preview3-runtime-nanoserver-ltsc2019)
+
 # Windows Server, version 1803 amd64 tags
 
 $(TagDoc:2.1.402-sdk-nanoserver-1803)
